@@ -9,6 +9,7 @@
   </thead>
 
   <tbody>
+   <%= will_paginate @comments %>
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.comment_text %></td>
